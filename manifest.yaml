@@ -1,0 +1,27 @@
+display_information:
+  name: eurydice
+  description: Orpheus never liked words. He had his music. 
+features:
+  bot_user:
+    display_name: eurydice
+  slash_commands:
+    - command: /eurydice-restart
+      description: start anew...
+  app_home:
+      messages_tab_enabled: true
+      messages_tab_read_only_enabled: false
+settings:
+  event_subscriptions:
+    bot_events:
+      - message.im
+  interactivity:
+    is_enabled: true
+  socket_mode_enabled: true
+oauth_config:
+  scopes:
+    bot:
+      - chat:write
+      - commands
+      - im:history
+      - im:read
+      - im:write

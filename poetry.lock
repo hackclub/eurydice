@@ -1,0 +1,44 @@
+[[package]]
+name = "slack-bolt"
+version = "1.14.0"
+description = "The Bolt Framework for Python"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.dependencies]
+slack-sdk = ">=3.15.2,<4"
+
+[package.extras]
+adapter = ["boto3 (<=2)", "bottle (>=0.12,<1)", "chalice (>=1.26.5,<2)", "click (>=7,<8)", "CherryPy (>=18,<19)", "Django (>=3,<5)", "falcon (>=2,<4)", "fastapi (>=0.70.0,<1)", "Flask (>=1,<3)", "Werkzeug (>=2,<3)", "pyramid (>=1,<3)", "sanic (>=21,<22)", "starlette (>=0.14,<1)", "tornado (>=6,<7)", "uvicorn (<1)", "gunicorn (>=20,<21)", "websocket-client (>=1.2.3,<2)"]
+adapter_testing = ["moto (>=3,<4)", "docker (>=5,<6)", "boddle (>=0.2,<0.3)", "Flask (>=1,<2)", "Werkzeug (>=1,<2)", "sanic-testing (>=0.7)", "requests (>=2,<3)"]
+async = ["aiohttp (>=3,<4)", "websockets (>=8,<10)"]
+testing = ["pytest (>=6.2.5,<7)", "pytest-cov (>=3,<4)", "Flask-Sockets (>=0.2,<1)", "Werkzeug (>=1,<2)", "itsdangerous (==2.0.1)", "Jinja2 (==3.0.3)", "black (==22.3.0)", "click (<=8.0.4)", "pytest-asyncio (>=0.18.2,<1)", "aiohttp (>=3,<4)"]
+testing_without_asyncio = ["pytest (>=6.2.5,<7)", "pytest-cov (>=3,<4)", "Flask-Sockets (>=0.2,<1)", "Werkzeug (>=1,<2)", "itsdangerous (==2.0.1)", "Jinja2 (==3.0.3)", "black (==22.3.0)", "click (<=8.0.4)"]
+
+[[package]]
+name = "slack-sdk"
+version = "3.17.2"
+description = "The Slack API Platform SDK for Python"
+category = "main"
+optional = false
+python-versions = ">=3.6.0"
+
+[package.extras]
+optional = ["aiodns (>1.0)", "aiohttp (>=3.7.3,<4)", "boto3 (<=2)", "SQLAlchemy (>=1,<2)", "websockets (>=10,<11)", "websocket-client (>=1,<2)"]
+testing = ["pytest (>=6.2.5,<7)", "pytest-asyncio (<1)", "Flask-Sockets (>=0.2,<1)", "Flask (>=1,<2)", "Werkzeug (<2)", "itsdangerous (==1.1.0)", "Jinja2 (==3.0.3)", "pytest-cov (>=2,<3)", "codecov (>=2,<3)", "flake8 (>=4,<5)", "black (==22.3.0)", "click (==8.0.4)", "psutil (>=5,<6)", "databases (>=0.5)", "boto3 (<=2)", "moto (>=3,<4)"]
+
+[metadata]
+lock-version = "1.1"
+python-versions = "^3.10"
+content-hash = "8719d5403dfa28f16236c6971d23f4719828dcca6faf45122cc6a7040c6b500b"
+
+[metadata.files]
+slack-bolt = [
+    {file = "slack_bolt-1.14.0-py2.py3-none-any.whl", hash = "sha256:86acccfb668ae57d553126cfb46ab694893e71aa7d3f78af597464d4148b4fcb"},
+    {file = "slack_bolt-1.14.0.tar.gz", hash = "sha256:2b3e41249616925325e3788b224440d8a70757885fd364d59eacc71db798a7ee"},
+]
+slack-sdk = [
+    {file = "slack_sdk-3.17.2-py2.py3-none-any.whl", hash = "sha256:70d5a55a5d52ba7128d5347ed995425e1f83e729667ab296035bcf6c1b13a049"},
+    {file = "slack_sdk-3.17.2.tar.gz", hash = "sha256:60302e32d48db6b4ea5453d92f23ecf3f7b843f799f61eaf271315264d7cb281"},
+]

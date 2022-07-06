@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "eurydice"
+version = "0.1.0"
+description = "hack club onboarding bot"
+authors = ["celeste drummond <celeste@hackclub.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+slack-bolt = "^1.14.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
